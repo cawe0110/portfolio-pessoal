@@ -1,0 +1,108 @@
+.container{
+    max-width:65vw;
+    margin: 0 auto;
+    font-size: 1vmax;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sections{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sections .materias .img{
+    width: 10%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sections .materias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vmax;
+}
+.parallax{
+    background: url('/img/p.img/p-natureza.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 97vw;
+    margin-top: 10vh;
+}
+.trabalhos-text{
+    display: flex;
+    justify-content: center;
+    font-size: 5vmax;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+}
+.tds-trabalhos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+.trabalhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 5vmax;
+    width: 30vw;
+    margin: 2vmax;
+    height: 65vh;
+}
+.dupla-trabalhos{
+    display: flex;
+}
+.trabalhos img{
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+}
+.trabalhos p{
+    max-width: 50vw;
+    margin: 2vmax;
+    color: black;
+}
+.trabalhos h1{
+    color: rgba(0, 0, 0, 0.747);
+}
+.trabalhos a{
+    color: blue;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(green, rgba(255, 217, 0, 0.822));
+    padding: 4vmax;
+    justify-content: space-around;
+}
+.footer-text{
+    max-width: 50vw;
+}
+@media only screen and (max-width: 990px){
+    .sections{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 570px){
+    .dupla-trabalhos{
+        flex-direction: column;
+    }
+    .trabalhos{
+        width: 70vw;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
